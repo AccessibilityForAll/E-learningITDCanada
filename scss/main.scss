@@ -15,6 +15,8 @@
 .marginTop10px{margin-top: 10px !important;}
 .marginTop20px{margin-top: 20px !important;}
 .marginTop30px{margin-top: 30px !important;}
+.marginAuto{margin: auto !important;}
+.width50percent{width: 50%!important;}
 
 /*General Class*/
 body, html {
@@ -64,6 +66,7 @@ body.login{
   color: white;
   font-size: 1.75rem;
   font-weight: bold;
+  display: block;
 
   &:hover{
     background: #af1412;
@@ -499,14 +502,15 @@ body.login{
 
     h2{
       color: white;
-      font-size: 2.225rem;
+      font-size: 3rem;
       text-align: center;
-      margin-top: 52px;
+      margin-top: 120px;
     }
   }
   ul.itemTimeline{
     width: 100%;
     margin-top: 65px;
+
     li{
         position: relative;
         margin-left: 85px;
@@ -515,9 +519,12 @@ body.login{
           position: absolute;
           color: white;
           font-size:  1.5rem;
-          text-align: center;
+          text-align: center !important;
           margin-top: 10px;
-          //white-space: nowrap;  
+
+          label{
+            margin-top: 5px;
+          }
         }
         &:first-child{
           &::before {
@@ -616,6 +623,14 @@ body.login{
     }
   }
 
+  .acessBtn{
+    margin: 150px auto 0;
+    width: 50%;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+  }
+
   .icon-timeline{
     width: 61px;
     height: 61px;
@@ -628,6 +643,39 @@ body.login{
 
   .icon-flag{
     background: url(../img/icon-flag.png) no-repeat;
+  }
+
+  .icon-check{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url(../img/icon-check.png) no-repeat;
+    position: absolute;
+    top: -13px;
+    right: -3px;
+  }
+
+  /* The animation code */
+@keyframes animationTimeline {
+    from  {width: 75px; height: 75px; top: -7px; right: -2px; opacity: 1}
+    to {width: 80px; height: 80px; top: -9px; right: -5px; opacity: 0}
+}
+
+  .item-active{
+    width: 75px;
+    height: 75px;
+    border: solid 3px white;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    position: absolute;
+    top: -7px;
+    right: -2px;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+   animation-name: animationTimeline;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 }
 
