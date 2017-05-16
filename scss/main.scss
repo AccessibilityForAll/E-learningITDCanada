@@ -5,26 +5,6 @@
 .top0{top: 0 !important;}
 .overflow-Hidden{overflow: hidden !important;}
 .marginTop0{margin-top: 0 !important;}
-.marginTop15px{margin-top: 15px !important;}
-.displayNone{display: none !important}
-.displayBlock{display: block !important}
-.positionRelative{position: relative !important;}
-.positionAbsolute{position: absolute !important;}
-.floatLeft{float: left !important;}
-.floatRight{float: right !important;}
-.marginTop10px{margin-top: 10px !important;}
-.marginTop20px{margin-top: 20px !important;}
-.marginTop30px{margin-top: 30px !important;}
-.marginAuto{margin: auto !important;}
-.width50percent{width: 50%!important;}
-.marginLeft50px{margin-left: 50px !important;}
-.marginLeft30px{margin-left: 30px !important;}
-.marginLeft20px{margin-left: 20px !important;}
-.fontBold{font-weight: bold !important}
-.font30px{font-size: 30px !important}
-.font50px{font-size: 50px !important}
-.font60px{font-size: 60px !important}
-.font20px{font-size: 20px !important}
 /*General Class*/
 body, html {
     height: 100%; 
@@ -838,6 +818,14 @@ body.login{
     -webkit-border-radius: 1px !important;
     -moz-border-radius: 1px !important;
     border-radius: 1px !important;
+  }
+}
+
+/*Stage Foruns and Mentoring*/
+
+#MentoringForuns{
+  .section{
+
   }
 } 
 
