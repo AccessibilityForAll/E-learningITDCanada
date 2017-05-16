@@ -15,6 +15,12 @@ a:hover{
   text-decoration: none;
 }
 
+.description{
+  font-size: 1.4rem;
+  color: #585858;
+  margin-top: 20px;
+}
+
 body.login{
 	background-image: url("../img/bg-login.jpg");
 
@@ -32,6 +38,17 @@ body.login{
       h2{
         color: #8f160a;
       }
+}
+
+.page-header-small{
+  border-bottom: 2px solid #eee !important;
+  width: 60%;
+
+  h3{
+    color: #585858;
+    font-size:  2rem;
+    font-weight: 300;
+  } 
 }
 
 .social-media{
