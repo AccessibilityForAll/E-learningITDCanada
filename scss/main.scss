@@ -896,7 +896,7 @@ body.login{
 #footer{
   .section:first-child{
     width: 100%;
-    height: 190px;
+    height: 250px;
     background: #374246;
     margin-top: 56px;
     color: white;
@@ -904,6 +904,25 @@ body.login{
     .logo-footer{
       float: right;
       margin-top: 50px;
+      display: block;
+    }
+
+    .social-media{
+      position: absolute;
+      top: 80px;
+      right: 0;
+    }
+
+    .menu-footer{
+      li{
+        &:first-child{
+          margin-top: 60px;
+        };
+        margin-top: 10px;
+        a{
+          color: white;
+        }
+      }
     }
   }
   .section:last-child{
