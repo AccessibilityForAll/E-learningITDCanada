@@ -955,7 +955,7 @@ ul.descritionCourse{
 }
 
 /*Treeviews - Icons*/
-.sprite {
+.sprite-treeviews {
     background-image: url(../img/treeviews.png);
     background-repeat: no-repeat;
     display: inline-block;
@@ -1047,6 +1047,27 @@ ul.descritionCourse{
     }
   }
 }
+
+/*BG - Slide*/
+
+.bg-slide{
+  width: 100%;
+  height: 520px;
+  margin-top: 40px;
+  border: 1px solid #e3e4e5;
+  background-image: url(../img/slide.png);
+  cursor: pointer;
+
+  .bg-controls{
+    width:100%;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
 
 
 /*Footer*/
