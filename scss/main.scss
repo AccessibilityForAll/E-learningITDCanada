@@ -903,9 +903,6 @@ ul.descritionCourse{
   }
 }
 
-
-
-
 /*Stage - Details Courses*/
 
 #detais-course{
@@ -918,11 +915,138 @@ ul.descritionCourse{
       -moz-border-radius: 3px;
       border-radius: 3px;
       border: solid 1px #c5c6c6;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+       box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
     }
   }
 }
 
+/*Treeviews*/
 
+.treeviews-contents{
+  padding: 0 15px;
+  li{
+    margin-top: 5px;
+    &:last-child{
+      border: none;
+    };
+    a{
+      color: #585858;
+      font-size: 1.513rem;
+      font-weight: bold;
+
+      i{
+        margin-right: 10px;
+      }
+    }
+    &:first-child{
+      padding: 0;
+    };
+
+    border-bottom: #eeeeee solid 1px;
+    padding: 10px 0;
+
+    h3{
+      color: #585858;
+      font-size: 1.813rem;
+    }
+  }
+}
+
+/*Treeviews - Icons*/
+.sprite {
+    background-image: url(../img/treeviews.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-treeviews-icon-down {
+    width: 14px;
+    height: 9px;
+    background-position: -5px -5px;
+}
+
+.sprite-treeviews-icon-normal {
+    width: 9px;
+    height: 14px;
+    background-position: -29px -5px;
+}
+
+/*List-assignment*/
+
+.list-assignment{
+  li{
+
+    .bg-assignment{
+      width: 100%;
+      height: 90px;
+      margin-top: 20px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+       border-radius: 3px;
+      border: solid 1px #c5c6c6;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+       box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+
+
+      .header-assignment{
+        width: 100%;
+        height: 40px;
+        background: #374347;
+        border-bottom: 4px solid #db2816;
+        color: white;
+        padding: 0 15px;
+
+        i{
+          position: relative;
+          top: 6px;
+          margin-right: 5px;
+        }
+
+        span{
+          font-size: 1.313rem;
+        }
+      }
+
+      .body-assignment{
+        padding: 0 10px;
+        ul{
+          margin-top: 10px;
+          position: relative;
+          left: 5px;
+
+          .separator{
+              bottom: 5px;
+              position: relative;
+              font-size: 20px;
+              color: #8b8787;
+          }
+
+          li{
+            i{
+              color: #8b8787;
+            }
+            a{
+              color: #8b8787;
+              position: relative;
+              bottom: 5px;
+              margin-left: 5px;
+              display: inline-block;
+
+              &:hover{
+                text-decoration: underline;
+                padding: botttom;
+              };  
+            }
+          }
+        } 
+      }
+    }
+  }
+}
 
 
 /*Footer*/
