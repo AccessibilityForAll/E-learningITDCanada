@@ -2,6 +2,8 @@
 
 .noPadding{padding:0 !important;}
 .fontBold{font-weight: bold !important;}
+.left20px{left: 10px !important;}
+.colorGray{color: #585858 !important}
 .top0{top: 0 !important;}
 .overflow-Hidden{overflow: hidden !important;}
 .marginTop0{margin-top: 0 !important;}
@@ -1091,10 +1093,43 @@ ul.descritionCourse{
   }
 }
 
+
+.time-course{
+  width: 100%;
+  background: #8b8787;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+
+  i{
+    font-size: 20px;
+    color: white !important;
+    margin-left: 10px;
+  }
+
+  span{
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+    color: white !important;
+  }
+}
 /*Item-List-Description - Container*/
 
 .container-list{
   padding: 0 10px;
+  li{
+    width: 100%;
+  }
+  span{
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #8b8787;
+  }
 }
 
 .Overview-item{
@@ -1127,10 +1162,6 @@ ul.descritionCourse{
       position: absolute;
       top: 80px;
       right: 0;
-
-      li{
-        
-      }
     }
 
     .menu-footer{
