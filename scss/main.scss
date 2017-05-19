@@ -974,40 +974,35 @@ ul.descritionCourse{
 }
 
 /*List-assignment*/
+.bg-assignment{
+    width: 100%;
+    min-height: 90px;
+    margin-top: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
+    border: solid 1px #c5c6c6;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
 
-.list-assignment{
-  li{
-
-    .bg-assignment{
+    .header-assignment{
       width: 100%;
-      height: 90px;
-      margin-top: 20px;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-       border-radius: 3px;
-      border: solid 1px #c5c6c6;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
-       box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.36);
+      height: 40px;
+      background: #374347;
+      border-bottom: 2px solid #db2816;
+      color: white;
+      padding: 0 15px;
 
+      i{
+        position: relative;
+        top: 6px;
+        margin-right: 5px;
+      }
 
-      .header-assignment{
-        width: 100%;
-        height: 40px;
-        background: #374347;
-        border-bottom: 4px solid #db2816;
-        color: white;
-        padding: 0 15px;
-
-        i{
-          position: relative;
-          top: 6px;
-          margin-right: 5px;
-        }
-
-        span{
-          font-size: 1.313rem;
+      span{
+        font-size: 1.313rem;
         }
       }
 
@@ -1019,10 +1014,10 @@ ul.descritionCourse{
           left: 5px;
 
           .separator{
-              bottom: 5px;
-              position: relative;
-              font-size: 20px;
-              color: #8b8787;
+            bottom: 5px;
+            position: relative;
+            font-size: 20px;
+            color: #8b8787;
           }
 
           li{
@@ -1045,9 +1040,6 @@ ul.descritionCourse{
         } 
       }
     }
-  }
-}
-
 /*BG - Slide*/
 
 .bg-slide{
@@ -1064,6 +1056,14 @@ ul.descritionCourse{
     background: rgba(0,0,0,0.5);
     position: absolute;
     bottom: 0;
+  }
+}
+
+.bg-list-details.bg-assignment{
+  .header-assignment{
+    background: white;
+    color: #585858;
+    border-color: #eeeeee;
   }
 }
 
