@@ -1064,6 +1064,7 @@ ul.descritionCourse{
     background: white;
     color: #585858;
     border-color: #eeeeee;
+    padding: 0 30px;
   }
 }
 
@@ -1091,6 +1092,10 @@ ul.descritionCourse{
 }
 
 /*Item-List-Description - Container*/
+
+.container-list{
+  padding: 0 10px;
+}
 
 .Overview-item{
   padding: 10px;
