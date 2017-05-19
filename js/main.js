@@ -44,4 +44,16 @@ $( document ).ready(function() {
     focusoutMenu.on('focusout',function(){
     	menuProfile.removeClass("displayBlock")
     })*/
+
+	//Function page details Course menu
+
+	var triggerMenuDetailsCourse = $(".item-list-description li");
+	var containerMenuDetails = $(".item-list-description");
+
+	triggerMenuDetailsCourse.on('click',function(){
+		event.preventDefault();
+		containerMenuDetails.find( "li" ).removeClass("active");
+		$(this).addClass("active");
+	})
+
 });
