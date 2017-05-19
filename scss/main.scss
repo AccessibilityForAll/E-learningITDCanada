@@ -1122,6 +1122,7 @@ ul.descritionCourse{
   padding: 0 10px;
   li{
     width: 100%;
+    display: none;
   }
   span{
     font-weight: bold;
@@ -1141,6 +1142,19 @@ ul.descritionCourse{
   }
 }
 
+/*Table Outline*/
+
+.course-outline-table{
+  margin-top: 30px;
+
+  tr{
+    td{
+      &:first-child{
+        width: 20%;
+      };
+    }
+  }
+}
 
 /*Footer*/
 
