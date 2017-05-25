@@ -246,17 +246,54 @@ a{
     background-size: 110%;
 }
 
+.bg-server{
+	background: url(../img/bg-service.png);
+	width: 100%;
+	height: 362px;
+	-webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+    background-size: 110%;
+}
+
+.bg-security{
+	background: url(../img/bg-security.png);
+	width: 100%;
+	height: 362px;
+	-webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+    background-size: 110%;
+}
+
+.bg-it-support{
+	background: url(../img/bg-it.png);
+	width: 100%;
+	height: 362px;
+	-webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+    background-size: 110%;	
+}
+
 .overflow-service{
 	position: relative;
 	overflow: hidden;
 
 	&:hover{
-		.bg-network{
+		.bg-network,.bg-server,.bg-security,.bg-it-support{
 			-webkit-transition: 0.5s; /* Safari */
     		transition: 0.5s;
-    		background-size: 120%;
+    		background-size: 130%;
 		}
 	};
 }
 
+/*Include Footer*/
 
+#footer{
+	.section{
+		border-top: 2px solid #00b0b9;
+		width: 100%;
+		height: 206px;
+		background: #007986;
+		margin-top: 50px;
+	}
+}
