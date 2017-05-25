@@ -14,6 +14,6 @@ $( document ).ready(function() {
      containerSubMenu.on('mouseleave',function(){
         setTimeout(function(){
          containerSubMenu.removeClass("marginTop0")
-     }, 3000);  
+     }, 1000);  
     })
 });

@@ -20,7 +20,7 @@ p{
 .pageHeader{
 	border-bottom: 2px solid #f2f2f2;
 	margin-top:50px;
-	margin-bottom: 35px;
+	margin-bottom: 35px; 
 	h2{
 		font-size:  2.875rem;
 		color: #03d2dd;
@@ -43,7 +43,7 @@ a{
 	.section{
 		.bar-top{
 			width: 100%;
-			height: 4px;
+			height: 5px;
 			background: #00b0b9;
 		}
 
@@ -165,6 +165,9 @@ a{
 			float: left;
 			-webkit-transition: 0.5s; /* Safari */
     		transition: 0.5s;
+    		a{
+    			text-indent: 66px;
+    		}
 			a:hover{
 				background: #01a0a8;
 				-webkit-transition: 0.5s; /* Safari */
@@ -177,6 +180,9 @@ a{
 			float: right;
 			-webkit-transition: 0.5s; /* Safari */
     		transition: 0.5s;
+    		a{
+    			padding-right: 66px;
+    		}
 			a:hover{
 				background: #03a2aa;
 				-webkit-transition: 0.5s; /* Safari */
@@ -289,11 +295,60 @@ a{
 /*Include Footer*/
 
 #footer{
-	.section{
-		border-top: 2px solid #00b0b9;
+	.section:first-child{
+		border-top: 4px solid #00b0b9;
 		width: 100%;
-		height: 206px;
 		background: #007986;
 		margin-top: 50px;
+
+		.logo_footer{
+			margin-top: 90px;
+			display: block;
+		}
+
+		h3{
+			color: white;
+			font-size: 2rem;
+			text-align: center;
+			font-weight: 700;
+			margin-top: 47px;
+		}
+
+		p{
+			color: white;
+			font-size: 1.5rem;
+			text-align: center;
+			margin-top: 25px;
+			margin-bottom: 50px;
+		}
+
+		.menu-footer{
+			margin-top: 47px;
+			li{
+				margin-bottom: 16px;
+				a{
+					color: white;
+					font-size:  1.625rem;
+					text-align: center;
+					display: block;
+
+					&:hover{
+						text-decoration: underline;
+					};
+				}
+			}
+		}
+	}
+
+	.section:last-child{
+		width: 100%;
+		height: 26px;
+		background: #00b0b9;
+		p{
+			text-align: center;
+			color: white;
+			font-size: 1.263rem;
+			line-height: 26px;
+		}
 	}
 }
