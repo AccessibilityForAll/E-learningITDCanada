@@ -23,12 +23,12 @@
             <div class="bar-top"></div>
             <div class="container">
                <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-6">
                      <a href="#" title="Logo Compuran"><img src="img/logo.png" class="logo" alt="Logo Compuran"></a>
                   </div>
                   <div class="col-md-9">
-                     <!-- Main Menu-->
-                     <ul class="list-inline main-menu">
+                     <!-- Main Menu desktop-->
+                     <ul class="list-inline main-menu hidden-sm">
                         <li>
                            <a href="#" class="active" title="Home">Home</a>
                         </li>
@@ -43,7 +43,45 @@
                         </li>
                         <li><a href="#" title="Search"><i class="material-icons">search</i></a></li>
                      </ul>
+                     <!--Trigger Menu mobile-->
+                     <div class="col-sm-6 hidden-md hidden-lg">
+                        <a href="#" class="triggerMenuMobile" title="Menu"><i class="material-icons">reorder</i></a>
+                     </div>
                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Main Menu mobile-->
+      <div id="sub-menu-mobile" class="hidden-md hidden-lg">
+         <div class="overflow">
+            <div class="section">
+               <div class="container">
+                  <ul class="list-unstyled menu-mobile">
+                     <li>
+                        <a href="#" title="Home">Home <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                     <li>
+                        <a href="#" class="subMenuMobileTrigger" title="Services">Services <i class="material-icons">keyboard_arrow_down</i></a>
+                     </li>
+                     <li class="triggerSubMenuMobile">
+                        <div class="overflow-mobile">
+                           <ul class="list-unstyled">
+                              <li><a href="#" title="Network Services">Network Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Servers Support">Servers Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Security Services">Security Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="IT Support">IT Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Products">Products <i class="material-icons">keyboard_arrow_right</i></a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="marginTopNeg10px marginItem">
+                        <a href="#" title="Contact Us">Contact us <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="Test">Test <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div>
@@ -55,7 +93,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <ul class="list-inline sub-menu">
+                        <ul class="list-inline sub-menu hidden-sm">
                            <li><a href="#" title="Network Services">Network Services</a></li>
                            <li><a href="#" title="Servers Support">Servers Support</a></li>
                            <li><a href="#" title="Security Services">Security Services</a></li>
@@ -159,7 +197,7 @@
                            </div>
                         </div>
                      </a>
-                  </div>  
+                  </div>
                   <div class="col-md-3">
                      <a href="#" title="Security Services">
                         <div class="overflow-service">
@@ -202,44 +240,46 @@
       <div id="footer">
          <div class="section">
             <div class="container">
-               <div class="col-md-3">
-                  <h3>Welcome to Compuran</h3>
-                  <p>Compuran computer services is a one stop company to solve all your communication, computer and IT needs including, hardware and software needs.</p>
-               </div>
-               <div class="col-md-3">
-                  <ul class="list-unstyled menu-footer">
-                     <li>
-                        <a href="#" title="Home">Home</a>
-                     </li>
-                     <li>
-                        <a href="#" title="About us">About us</a>
-                     </li>
-                     <li>
-                        <a href="#" title="Contact us">Contact us</a>
-                     </li>
-                     <li>
-                        <a href="#" title="Test">Test</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-md-3">
-                  <ul class="list-unstyled menu-footer">
-                     <li>
-                        <a href="#" title="Network Services">Network Services</a>
-                     </li>
-                     <li>
-                        <a href="#" title="Servers Support">Servers support</a>
-                     </li>
-                     <li>
-                        <a href="#" title="Security Services">Security services</a>
-                     </li>
-                     <li>
-                        <a href="#" title="IT Support">It Support</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="col-md-3">
-                  <a href="#" class="logo_footer" title="Logo Compuran"><img src="img/logo_footer.png" class="logo" alt="Logo Compuran"></a>
+               <div class="row ">
+                  <div class="col-md-3 hidden-sm">
+                     <h3>Welcome to Compuran</h3>
+                     <p>Compuran computer services is a one stop company to solve all your communication, computer and IT needs including, hardware and software needs.</p>
+                  </div>
+                  <div class="col-md-3 hidden-sm">
+                     <ul class="list-unstyled menu-footer">
+                        <li>
+                           <a href="#" title="Home">Home</a>
+                        </li>
+                        <li>
+                           <a href="#" title="About us">About us</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Contact us">Contact us</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Test">Test</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3 hidden-sm">
+                     <ul class="list-unstyled menu-footer">
+                        <li>
+                           <a href="#" title="Network Services">Network Services</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Servers Support">Servers support</a>
+                        </li>
+                        <li>
+                           <a href="#" title="Security Services">Security services</a>
+                        </li>
+                        <li>
+                           <a href="#" title="IT Support">It Support</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-12">
+                     <a href="#" class="logo_footer" title="Logo Compuran"><img src="img/logo_footer.png" class="logo" alt="Logo Compuran"></a>
+                  </div>
                </div>
             </div>
          </div>

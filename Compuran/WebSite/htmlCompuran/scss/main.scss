@@ -32,6 +32,7 @@ p{
 .noPadding{padding: 0 !important;}
 .marginBottom300px{margin-bottom: 300px !important;}
 .positionRelative{position: relative !important}
+.marginTopNeg10px{margin-top: -10px !important;}
 
 a{ 
 	&:hover{
@@ -143,6 +144,74 @@ a{
 	}
 }
 
+/*Menu Mobile*/
+
+.triggerMenuMobile{
+	float: right;
+	margin-top: 45px;
+	i{
+		font-size: 30px;
+		color: #04535c;
+	}
+}
+
+.triggerSubMenuMobile{
+	border: none !important;
+
+	ul{
+		li:last-child{
+			border-bottom: 1px solid rgba(255,255,255,0.1) !important;	
+		}
+		-webkit-transition: 0.5s; /* Safari */
+    	transition: 0.5s;
+    	margin-top: -253px;
+	}
+}
+
+#sub-menu-mobile{
+	.overflow{
+		margin-top:20px;
+	}
+
+	.overflow-mobile{
+		overflow: hidden;
+		ul{
+			margin-left:5px;
+		}
+	}
+	.section{
+		width: 100%;
+		background: #04535c;
+		-webkit-transition: 0.5s; /* Safari */
+    	transition: 0.5s;
+    	margin-top: -205px;
+
+		.menu-mobile{
+			li{
+				margin-top: 15px;
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+				padding-bottom: 10px;
+				/*&:nth-child(4){
+				  margin-top: -10px;
+				};*/
+				&:last-child{
+					border: none;
+				};
+				a{
+					font-size:  1.625rem;
+					color: white;
+					display: block;
+
+					i{
+						float: right;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
 /*Include Links*/
 
 #links{
@@ -244,7 +313,7 @@ a{
 }
 
 .bg-network{
-	background: url(../img/bg-network.png);
+	background: url(../img/bg-network.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -253,7 +322,7 @@ a{
 }
 
 .bg-server{
-	background: url(../img/bg-service.png);
+	background: url(../img/bg-service.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -262,7 +331,7 @@ a{
 }
 
 .bg-security{
-	background: url(../img/bg-security.png);
+	background: url(../img/bg-security.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -271,7 +340,7 @@ a{
 }
 
 .bg-it-support{
-	background: url(../img/bg-it.png);
+	background: url(../img/bg-it.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -352,3 +421,35 @@ a{
 		}
 	}
 }
+
+/*Media query*/
+
+@media screen and (max-width: 1205px){
+   .sub-menu{
+   	width: 80% !important;
+   }
+
+   .bg-network,.bg-server,.bg-security,.bg-it-support{
+		background-size: 150%;
+   }
+
+   .overflow-service:hover{
+   		.bg-network,.bg-server,.bg-security,.bg-it-support{
+   			background-size: 170%;	
+   		}
+   }
+}
+
+@media screen and (max-width: 990px){
+  .container{
+  	width: 100%;
+  }
+  .logo{margin-top: 20px !important;margin-bottom: 40px !important}
+  .logo_footer{
+  	text-align: center;
+  	display: block;
+  	margin-top: 10px !important;
+  }
+  .overflow{margin-top: 0 !important;}
+}
+
