@@ -278,6 +278,12 @@ a{
 	cursor: pointer;
 	padding: 20px;
 
+	h3{
+		text-align: center;
+		color: white;
+		font-size: 30px;
+	}
+
 	ul{
 		position: absolute;
 		bottom: 0;
@@ -451,5 +457,8 @@ a{
   	margin-top: 10px !important;
   }
   .overflow{margin-top: 0 !important;}
+  .bg-network,.bg-server,.bg-security,.bg-it-support{
+  	background-size: 101% !important;
+  }
 }
 
