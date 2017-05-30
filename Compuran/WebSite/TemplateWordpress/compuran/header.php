@@ -20,14 +20,14 @@
       <link rel="stylesheet" type="text/css" href="css/Shorts.lite.min.css">
    </head>
    <body>
-   <!-- Include Top-->
+      <!-- Include Top-->
       <div id="top">
          <div class="section">
             <div class="bar-top"></div>
             <div class="container">
                <div class="row">
                   <div class="col-md-3 col-sm-6">
-                     <a href="<?php get_option('home') ?>" title="Logo Compuran"><img src="http://localhost:8080/compuran/wp-content/themes/compuran/img/logo.png" class="logo" alt="Logo Compuran"></a>
+                     <a href="http://localhost:8080/compuran/" title="Logo Compuran"><img src="http://localhost:8080/compuran/wp-content/themes/compuran/img/logo.png" class="logo" alt="Logo Compuran"></a>
                   </div>
                   <div class="col-md-9">
                      <!-- Main Menu desktop-->
@@ -38,13 +38,13 @@
                         <?php wp_list_pages('title_li=') ?>
                         <!--li>
                            <a href="#" class="triggermenu" title="Services">Services <i class="material-icons">keyboard_arrow_down</i></a>
-                        </li>
-                        <li>
+                           </li>
+                           <li>
                            <a href="#" title="Contact us">Contact Us</a>
-                        </li>
-                        <li>
+                           </li>
+                           <li>
                            <a href="#" title="Test">Test</a>
-                        </li-->
+                           </li-->
                         <li><a href="#" title="Search"><i class="material-icons">search</i></a></li>
                      </ul>
                      <!--Trigger Menu mobile-->
@@ -57,34 +57,35 @@
          </div>
       </div>
       <!-- Main Menu mobile-->
-      <!-- Include Banner-->
-      <div id="banner">
+      <div id="sub-menu-mobile" class="hidden-md hidden-lg">
          <div class="overflow">
-            <div class="section containerSubMenu">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <ul class="list-inline sub-menu hidden-sm">
-                           <li><a href="#" title="Network Services">Network Services</a></li>
-                           <li><a href="#" title="Servers Support">Servers Support</a></li>
-                           <li><a href="#" title="Security Services">Security Services</a></li>
-                           <li><a href="#" title="IT Support">IT Support</a></li>
-                           <li><a href="#" title="Products">Products</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
             <div class="section">
                <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <h1>Welcome to Compuran</h1>
-                        <p>
-                           An Information Technology(IT) development company that creates cost-effective custom solutions based on technical expertise of hardware, software & networking developers.
-                        </p>
-                     </div>
-                  </div>
+                  <ul class="list-unstyled menu-mobile">
+                     <li>
+                        <a href="#" title="Home">Home <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                     <li>
+                        <a href="#" class="subMenuMobileTrigger" title="Services">Services <i class="material-icons">keyboard_arrow_down</i></a>
+                     </li>
+                     <li class="triggerSubMenuMobile">
+                        <div class="overflow-mobile">
+                           <ul class="list-unstyled">
+                              <li><a href="#" title="Network Services">Network Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Servers Support">Servers Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Security Services">Security Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="IT Support">IT Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="#" title="Products">Products <i class="material-icons">keyboard_arrow_right</i></a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="marginTopNeg10px marginItem">
+                        <a href="#" title="Contact Us">Contact us <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                     <li>
+                        <a href="#" title="Test">Test <i class="material-icons">keyboard_arrow_right</i></a>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div>

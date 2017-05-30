@@ -1,11 +1,17 @@
-/*Geral Classes*/
+ /*
+	Theme Name: Compuran
+	Author: Raphael Andrade
+	Version: 1.0
+*/
+
+/*Geral Classes*/ 
 body{
 	font-size: 100%; 
     font-family: 'Roboto', sans-serif;
 }
 
 .overflow{
-	overflow: hidden;
+	overflow: hidden; 
 }
 
 p{
@@ -97,10 +103,6 @@ a{
 		};
 		
 		&:last-child{
-			width:100%; 
-			height: 500px;
-			background: url(../img/banner.png);
-
 			h1{
 				text-align: center;
 				font-size: 5rem;
@@ -119,6 +121,18 @@ a{
 	}
 }
 
+.banner-home{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/banner.png);
+}
+
+.banner-contact{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/banner-contact.png);
+}
+
 .triggermenu{
 	i{
 		position: relative;
@@ -129,7 +143,7 @@ a{
 /*Sub-menu*/
 
 .sub-menu{
-	margin: auto;
+	margin: auto !important;
 	width: 70%;
 	li{
 		margin-left: 26px;
@@ -182,9 +196,9 @@ a{
 	.section{
 		width: 100%;
 		background: #04535c;
-		-webkit-transition: 0.5s; /* Safari */
+		-webkit-transition: 0.4s; /* Safari */
     	transition: 0.5s;
-    	margin-top: -205px;
+    	margin-top: -475px;
 
 		.menu-mobile{
 			li{
@@ -241,6 +255,7 @@ a{
 				background: #01a0a8;
 				-webkit-transition: 0.5s; /* Safari */
     			transition: 0.5s;
+    			text-decoration: none;
 			};
 		}
 
@@ -256,9 +271,46 @@ a{
 				background: #03a2aa;
 				-webkit-transition: 0.5s; /* Safari */
     			transition: 0.5s;
+    			text-decoration: none;
 			};
 		}
 	}
+}
+
+/*Container-home*/
+
+#container-home{
+	.section{
+		width: 100%;
+		background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+	}
+}
+
+/*Page contact*/
+
+form{
+	label{
+		color: #777777;
+		margin-top: 20px;
+		font-size: 20px;
+	}
+
+	button{
+		margin-top: 30px;
+		background: #007986 !important;
+		color: white !important;
+		border-color: transparent !important;
+		-webkit-transition: 0.5s; /* Safari */
+    	transition: 0.5s;
+
+		&:hover{
+			background: #036570 !important;
+
+		};
+	}
+}
+.contact-form{
+	margin-top: 50px;
 }
 
 /*Services*/
@@ -296,8 +348,8 @@ a{
 			}
 		}
 
-		li:last-child{
-			span{
+		li:last-child{ 
+			span{ 
 				width: 35px;
 				height: 35px;
 				border: 2px solid white;
@@ -319,7 +371,7 @@ a{
 }
 
 .bg-network{
-	background: url(../img/bg-network.png) no-repeat;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-network.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -328,7 +380,7 @@ a{
 }
 
 .bg-server{
-	background: url(../img/bg-service.png) no-repeat;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-service.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -337,7 +389,7 @@ a{
 }
 
 .bg-security{
-	background: url(../img/bg-security.png) no-repeat;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-security.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
@@ -346,7 +398,7 @@ a{
 }
 
 .bg-it-support{
-	background: url(../img/bg-it.png) no-repeat;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-it.png) no-repeat;
 	width: 100%;
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
