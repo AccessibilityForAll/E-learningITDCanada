@@ -9,10 +9,10 @@
             <div class="row">
                <div class="col-md-12">
                   <ul class="list-inline sub-menu hidden-sm">
-                     <li><a href="#" title="Network Services">Network Services</a></li>
+                     <li><a href="http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services</a></li>
                      <li><a href="#" title="Servers Support">Servers Support</a></li>
                      <li><a href="#" title="Security Services">Security Services</a></li>
-                     <li><a href="#" title="IT Support">IT Support</a></li>
+                     <li><a href=" http://localhost:8080/compuran/it-support/" title="IT Support">IT Support</a></li>
                      <li><a href="#" title="Products">Products</a></li>
                   </ul>
                </div>
@@ -78,15 +78,15 @@
                </div>
             </div>
          </div>
-         <div class="row">
+         <div class="row marginBottom50px">
             <div class="col-md-3">
-               <a href="#" title="Network Services">
+               <a href="http://localhost:8080/compuran/networking-services/" title="Network Services">
                   <div class="overflow-service">
                      <div class="bg-network"></div>
                      <div class="bg-services">
                         <!--Only Mobile-->
                         <h3 class="hidden-md hidden-lg">
-                           Network Services
+                           Network Services 
                         </h3>
                         <ul class="list-inline hidden-sm">
                            <li>
@@ -101,7 +101,7 @@
                </a>
             </div>
             <div class="col-md-3">
-               <a href="#" title="Server Services">
+               <a href=" http://localhost:8080/compuran/server-support/" title="Server Services">
                   <div class="overflow-service">
                      <div class="bg-server"></div>
                      <div class="bg-services">
@@ -122,7 +122,7 @@
                </a>
             </div>
             <div class="col-md-3">
-               <a href="#" title="Security Services">
+               <a href=" http://localhost:8080/compuran/security-services/ " title="Security Services">
                   <div class="overflow-service">
                      <div class="bg-security"></div>
                      <div class="bg-services">
@@ -143,7 +143,7 @@
                </a>
             </div>
             <div class="col-md-3">
-               <a href="#" title="IT Support">
+               <a href=" http://localhost:8080/compuran/it-support/" title="IT Support">
                   <div class="overflow-service">
                      <div class="bg-it-support"></div>
                      <div class="bg-services">

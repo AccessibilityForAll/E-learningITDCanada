@@ -1,16 +1,14 @@
 
 $( document ).ready(function() { 
     //function sub-menu
-    var triggerMenu = $(".main-menu li:nth-child(3) a");
+    var triggerMenu = $(".triggermenu");
     var containerSubMenu = $(".containerSubMenu")
-    triggerMenu.addClass("triggermenu");
-    triggerMenu.append("<i class='material-icons'>keyboard_arrow_down</i>")
 
     //Add class when user put the mouse over triggerMenu
     triggerMenu.on('mouseover',function(){
         containerSubMenu.addClass("marginTop0") 
     })
-   
+    
      containerSubMenu.on('mouseleave',function(){
         setTimeout(function(){
          containerSubMenu.removeClass("marginTop0")

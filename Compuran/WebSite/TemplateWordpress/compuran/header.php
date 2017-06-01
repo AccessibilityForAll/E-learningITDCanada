@@ -33,14 +33,14 @@
                      <!-- Main Menu desktop-->
                      <ul class="list-inline main-menu hidden-sm">
                         <li>
-                           <a href="<?php get_option('home') ?>" class="active" title="Home">Home</a>
+                           <a href=" http://localhost:8080/compuran/contact-us/" class="active" title="Home">Home</a>
                         </li>
-                        <?php wp_list_pages('title_li=') ?>
-                        <!--li>
+                        <!--?php wp_list_pages('title_li=') ?-->
+                        <li>
                            <a href="#" class="triggermenu" title="Services">Services <i class="material-icons">keyboard_arrow_down</i></a>
                            </li>
                            <li>
-                           <a href="#" title="Contact us">Contact Us</a>
+                           <a href="http://localhost:8080/compuran/contact-us/" title="Contact us">Contact Us</a>
                            </li>
                            <li>
                            <a href="#" title="Test">Test</a>
@@ -71,8 +71,8 @@
                      <li class="triggerSubMenuMobile">
                         <div class="overflow-mobile">
                            <ul class="list-unstyled">
-                              <li><a href="#" title="Network Services">Network Services <i class="material-icons">keyboard_arrow_right</i></a></li>
-                              <li><a href="#" title="Servers Support">Servers Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href=" http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href=" http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support <i class="material-icons">keyboard_arrow_right</i></a></li>
                               <li><a href="#" title="Security Services">Security Services <i class="material-icons">keyboard_arrow_right</i></a></li>
                               <li><a href="#" title="IT Support">IT Support <i class="material-icons">keyboard_arrow_right</i></a></li>
                               <li><a href="#" title="Products">Products <i class="material-icons">keyboard_arrow_right</i></a></li>

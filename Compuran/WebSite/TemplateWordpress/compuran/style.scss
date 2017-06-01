@@ -2,7 +2,7 @@
 	Theme Name: Compuran
 	Author: Raphael Andrade
 	Version: 1.0
-*/
+*/ 
 
 /*Geral Classes*/ 
 body{
@@ -40,6 +40,8 @@ p{
 .positionRelative{position: relative !important}
 .marginTopNeg10px{margin-top: -10px !important;}
 .marginBottom50px{margin-bottom: 50px !important;}
+.marginBottom100px{margin-bottom: 100px !important;}
+.marginBottom80px{margin-bottom: 80px !important;}
 
 a{ 
 	&:hover{
@@ -81,6 +83,42 @@ a{
 				};
 			}
 		}
+	}
+}
+
+/*List-network*/
+
+#list-network{
+	.section{
+		width: 100%;
+		padding-bottom: 100px;
+		background:url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-network-list.png);
+
+		h3{
+			color: white;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 80px;
+			display: block;
+		}
+
+		ul{
+			margin-top: 100px;
+			li{
+				color: white;
+				font-size: 1.625rem;
+				margin-top: 25px;
+				i{
+					font-size: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	img{
+		position: relative;
+		top: 90px;
 	}
 }
  
@@ -134,10 +172,88 @@ a{
 	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/banner-contact.png);
 }
 
+.banner-network{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/banner-network.png);
+}
+
+.banner-server{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-server.png);
+}
+
+.banner-security{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/banner-security.png);
+}
+
+.banner-itSupport{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-itSupport.png);
+}
+
 .triggermenu{
 	i{
 		position: relative;
 		top: 7px;
+	}
+}
+
+/*It-Support*/
+#it-support{
+	.section{	
+		&:first-child{
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+			ul{
+				margin-bottom: 80px;
+				li{
+					color: #086267;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}	
+		};
+
+		&:nth-child(2){
+			width: 100%;
+			height: 380px;
+			background: #007986;
+
+			img{
+				position: relative;
+				bottom: 60px;
+			}
+
+			h3{
+				color: white;
+				margin: 40px 0 30px 0;
+			}
+
+			ul{
+				li{
+					color: white;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
+		};
+
+		&:last-child{
+			margin-top: 20px;
+			margin-bottom: 300px;
+		};
 	}
 }
 
@@ -156,6 +272,69 @@ a{
 				color: #00b0b9;
 			};
 		}
+	}
+}
+
+/*security-page*/
+
+#security-page{
+	.section{
+		width: 100%;
+		
+		&:first-child{
+			height: 700px;
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-security-2.png);
+
+			h3{
+				color: white;
+				margin: 120px 0 40px 0;
+				line-height: 30px;
+			}
+
+			ul{
+				li{
+					color: white;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
+		};
+
+		&:last-child{
+			width: 100%;
+			height: 500px;
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+
+			h3{
+				color: #086267;
+				margin: 120px 0 40px 0;
+				line-height: 30px;
+			}
+
+			img{
+				position: relative;
+				top: 80px;
+			}
+
+			ul{
+				li{
+					color: #086267;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
+		};
+
+		
+
 	}
 }
 
@@ -319,7 +498,7 @@ form{
 	}
 }
 
-/*Services*/
+/*Page Services*/
 
 .bg-services{
 	width: 100%;
@@ -425,11 +604,51 @@ form{
 	};
 }
 
+/*Page server*/
+
+#server-details{
+	.section{
+		h3{
+			color: #086267;
+			margin: 60px 0 40px 0;
+			line-height: 30px;
+		}
+		ul{
+			
+			li{
+				color: #086267;
+				font-size: 1.625rem;
+				margin-top: 25px;
+				i{
+					font-size: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		&:first-child{
+			width: 100%;
+			height: 500px;
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-server-2.png) no-repeat;
+		};
+
+		&:last-child{
+			width: 100%;
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+			img{
+				position: relative;
+				top: 50px;
+			}
+		};
+
+	}
+}
+
 /*Include Footer*/
 
 #footer{
 	.section:first-child{
-		border-top: 4px solid #00b0b9;
+		//border-top: 4px solid #00b0b9;
 		width: 100%;
 		background: #007986;
 		//margin-top: 50px;

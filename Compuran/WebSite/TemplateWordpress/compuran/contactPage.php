@@ -12,7 +12,7 @@
             <div class="row">
                <div class="col-md-12">
                   <ul class="list-inline sub-menu hidden-sm">
-                     <li><a href="#" title="Network Services">Network Services</a></li>
+                     <li><a href="http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services</a></li>
                      <li><a href="#" title="Servers Support">Servers Support</a></li>
                      <li><a href="#" title="Security Services">Security Services</a></li>
                      <li><a href="#" title="IT Support">IT Support</a></li>
@@ -32,19 +32,6 @@
                   </p>
                </div>
             </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!-- Include Links-->
-<div id="links">
-   <div class="section">
-      <div class="container-fluid noPadding">
-         <div class="left side">
-            <a href="#">Hardware and Software</a>
-         </div>
-         <div class="right side">
-            <a href="#">Networking developers</a>
          </div>
       </div>
    </div>
