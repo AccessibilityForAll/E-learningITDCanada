@@ -42,6 +42,7 @@ p{
 .marginBottom50px{margin-bottom: 50px !important;}
 .marginBottom100px{margin-bottom: 100px !important;}
 .marginBottom80px{margin-bottom: 80px !important;}
+.marginTop190px{margin-top:190px !important;}
 
 a{ 
 	&:hover{
@@ -196,6 +197,12 @@ a{
 	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-itSupport.png);
 }
 
+.banner-product{
+	width:100%; 
+	height: 500px;
+	background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-product.png);
+}
+
 .triggermenu{
 	i{
 		position: relative;
@@ -207,6 +214,7 @@ a{
 #it-support{
 	.section{	
 		&:first-child{
+			padding-bottom: 80px;
 			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
 			ul{
 				margin-bottom: 80px;
@@ -226,10 +234,12 @@ a{
 			width: 100%;
 			height: 380px;
 			background: #007986;
+			position: relative;
 
 			img{
-				position: relative;
-				bottom: 60px;
+				position: absolute;
+				left: 0;
+				top: -50px;
 			}
 
 			h3{
@@ -251,8 +261,30 @@ a{
 		};
 
 		&:last-child{
-			margin-top: 20px;
-			margin-bottom: 300px;
+			img{
+				position: relative;
+				top: 130px;
+			}
+
+			width: 100%;
+			padding: 80px 0;
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+			h3{
+				color: #086267;
+				    margin: 40px 0 30px 0;	
+			}
+
+			ul{
+				li{
+					color: #086267;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
 		};
 	}
 }
@@ -272,6 +304,52 @@ a{
 				color: #00b0b9;
 			};
 		}
+	}
+}
+
+
+/*Products*/
+
+#products{
+	.section{
+		width: 100%;
+		
+		&:first-child{
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+			padding-bottom: 50px;
+		};
+
+		&:nth-child(2){
+			background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-product-2.png);
+			height: 450px;
+			h3{
+				color: white;
+				margin: 80px 0 40px;
+			}
+			ul{
+				li{
+					color: white;
+					font-size: 1.625rem;
+					margin-top: 15px;
+					i{
+						font-size: 10px;
+						margin-right: 10px;
+					}
+				}
+			}
+		};
+
+		&:last-child{
+			width: 100%;
+			height: 50px;
+			background: #086267;
+			line-height: 50px;
+			p{
+				color: white;
+				text-align: center;
+				font-size: 18px;
+			}
+		};
 	}
 }
 
@@ -490,7 +568,6 @@ form{
 	}
 }
 .contact-form{
-	margin-top: 50px;
 	span{
 		color: #cb0d16;
 		position: relative;
@@ -561,7 +638,7 @@ form{
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
-    background-size: 110%;
+    background-size: 116%;
 }
 
 .bg-server{
@@ -570,7 +647,7 @@ form{
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
-    background-size: 110%;
+    background-size: 116%;
 }
 
 .bg-security{
@@ -579,7 +656,7 @@ form{
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
-    background-size: 110%;
+    background-size: 116%;
 }
 
 .bg-it-support{
@@ -588,7 +665,7 @@ form{
 	height: 362px;
 	-webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
-    background-size: 110%;	
+    background-size: 116%;	
 }
 
 .overflow-service{
@@ -707,7 +784,7 @@ form{
 
 /*Media query*/
 
-@media screen and (max-width: 1205px){
+@media screen and (max-width: 1255px){
    .sub-menu{
    	width: 80% !important;
    }
@@ -723,7 +800,17 @@ form{
    }
 }
 
+@media screen and (max-width: 1200px){
+   .sub-menu{
+   	width: 90% !important;
+   }
+}
+
+
 @media screen and (max-width: 990px){
+   h1{
+   	font-size: 3.7rem !important;
+   }
   .container{
   	width: 100%;
   }
@@ -736,6 +823,61 @@ form{
   .overflow{margin-top: 0 !important;}
   .bg-network,.bg-server,.bg-security,.bg-it-support{
   	background-size: 101% !important;
+  }
+	
+  #it-support {
+  	.section:first-child{
+  		padding-bottom: 0!important;
+  	};
+
+  	.section:first-child{
+  		.pageHeader{
+  			margin-bottom: 0 !important;
+  			margin-top: 40px;
+  		}
+
+  		ul{
+  			margin-bottom: 40px !important;
+  		}
+  	}
+
+  	.section:nth-child(2){
+  		height: 320px !important;
+  		h3{
+  			margin-top: 25px !important;
+  			margin-bottom: 10px !important;
+  		}
+  	}
+
+  	.section:last-child{
+  		padding: 30px !important;
+
+  		h3{
+  			margin: 0 !important;
+  		}
+  	}
+  }
+
+  #products{
+  	.section:last-child{
+  		display: none !important;
+  	};
+  }
+
+  #security-page{
+  	.section:first-child{
+  		height: 610px !important;
+  		h3{
+  			margin-top: 60px !important;
+  		}
+  	};
+
+  	.section:last-child{
+  		height: 430px !important;
+  		h3{
+  			margin-top: 60px !important;
+  		}
+  	}
   }
 }
 

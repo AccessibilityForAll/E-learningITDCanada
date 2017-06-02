@@ -8,3 +8,6 @@
          'after_title' => '</h2>',
          ))
    ?>
+
+   <!-- send Email -->
+

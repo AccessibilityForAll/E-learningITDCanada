@@ -10,10 +10,10 @@
                <div class="col-md-12">
                   <ul class="list-inline sub-menu hidden-sm">
                      <li><a href="http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services</a></li>
-                     <li><a href="#" title="Servers Support">Servers Support</a></li>
-                     <li><a href="#" title="Security Services">Security Services</a></li>
-                     <li><a href=" http://localhost:8080/compuran/it-support/" title="IT Support">IT Support</a></li>
-                     <li><a href="#" title="Products">Products</a></li>
+                     <li><a href="http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/security-services/" title="Security Services">Security Services</a></li>
+                     <li><a href="http://localhost:8080/compuran/it-support/" title="IT Support">IT Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/products/" title="Products">Products</a></li>
                   </ul>
                </div>
             </div>

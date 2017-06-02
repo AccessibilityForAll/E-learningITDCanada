@@ -51,6 +51,9 @@ p {
 .marginBottom80px {
   margin-bottom: 80px !important; }
 
+.marginTop190px {
+  margin-top: 190px !important; }
+
 a:hover {
   text-decoration: none; }
 
@@ -115,6 +118,7 @@ a:hover {
     margin-top: -53px;
     -webkit-transition: 0.5s;
     /* Safari */
+    -o-transition: 0.5s;
     transition: 0.5s; }
   #banner .section:last-child h1 {
     text-align: center;
@@ -158,12 +162,18 @@ a:hover {
   height: 500px;
   background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-itSupport.png); }
 
+.banner-product {
+  width: 100%;
+  height: 500px;
+  background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-product.png); }
+
 .triggermenu i {
   position: relative;
   top: 7px; }
 
 /*It-Support*/
 #it-support .section:first-child {
+  padding-bottom: 80px;
   background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png); }
   #it-support .section:first-child ul {
     margin-bottom: 80px; }
@@ -178,10 +188,12 @@ a:hover {
 #it-support .section:nth-child(2) {
   width: 100%;
   height: 380px;
-  background: #007986; }
+  background: #007986;
+  position: relative; }
   #it-support .section:nth-child(2) img {
-    position: relative;
-    bottom: 60px; }
+    position: absolute;
+    left: 0;
+    top: -50px; }
   #it-support .section:nth-child(2) h3 {
     color: white;
     margin: 40px 0 30px 0; }
@@ -194,8 +206,22 @@ a:hover {
       margin-right: 10px; }
 
 #it-support .section:last-child {
-  margin-top: 20px;
-  margin-bottom: 300px; }
+  width: 100%;
+  padding: 80px 0;
+  background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png); }
+  #it-support .section:last-child img {
+    position: relative;
+    top: 130px; }
+  #it-support .section:last-child h3 {
+    color: #086267;
+    margin: 40px 0 30px 0; }
+  #it-support .section:last-child ul li {
+    color: #086267;
+    font-size: 1.625rem;
+    margin-top: 15px; }
+    #it-support .section:last-child ul li i {
+      font-size: 10px;
+      margin-right: 10px; }
 
 /*Sub-menu*/
 .sub-menu {
@@ -209,6 +235,35 @@ a:hover {
       line-height: 50px; }
       .sub-menu li a:hover {
         color: #00b0b9; }
+
+/*Products*/
+#products .section {
+  width: 100%; }
+  #products .section:first-child {
+    background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-body.png);
+    padding-bottom: 50px; }
+  #products .section:nth-child(2) {
+    background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-product-2.png);
+    height: 450px; }
+    #products .section:nth-child(2) h3 {
+      color: white;
+      margin: 80px 0 40px; }
+    #products .section:nth-child(2) ul li {
+      color: white;
+      font-size: 1.625rem;
+      margin-top: 15px; }
+      #products .section:nth-child(2) ul li i {
+        font-size: 10px;
+        margin-right: 10px; }
+  #products .section:last-child {
+    width: 100%;
+    height: 50px;
+    background: #086267;
+    line-height: 50px; }
+    #products .section:last-child p {
+      color: white;
+      text-align: center;
+      font-size: 18px; }
 
 /*security-page*/
 #security-page .section {
@@ -259,6 +314,7 @@ a:hover {
   .triggerSubMenuMobile ul {
     -webkit-transition: 0.5s;
     /* Safari */
+    -o-transition: 0.5s;
     transition: 0.5s;
     margin-top: -253px; }
     .triggerSubMenuMobile ul li:last-child {
@@ -277,6 +333,8 @@ a:hover {
   background: #04535c;
   -webkit-transition: 0.4s;
   /* Safari */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   margin-top: -475px; }
   #sub-menu-mobile .section .menu-mobile li {
@@ -312,6 +370,7 @@ a:hover {
   float: left;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s; }
   #links .section .side.left a {
     text-indent: 66px; }
@@ -319,6 +378,7 @@ a:hover {
     background: #01a0a8;
     -webkit-transition: 0.5s;
     /* Safari */
+    -o-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -327,6 +387,7 @@ a:hover {
   float: right;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s; }
   #links .section .side.right a {
     padding-right: 66px; }
@@ -334,6 +395,7 @@ a:hover {
     background: #03a2aa;
     -webkit-transition: 0.5s;
     /* Safari */
+    -o-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none; }
 
@@ -355,16 +417,15 @@ form button {
   border-color: transparent !important;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s; }
   form button:hover {
     background: #036570 !important; }
 
-.contact-form {
-  margin-top: 50px; }
-  .contact-form span {
-    color: #cb0d16;
-    position: relative;
-    top: 5px; }
+.contact-form span {
+  color: #cb0d16;
+  position: relative;
+  top: 5px; }
 
 /*Page Services*/
 .bg-services {
@@ -375,6 +436,8 @@ form button {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #053033 100%);
   /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(1%, rgba(253, 253, 253, 0)), to(#053033));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #053033 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, #053033 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#053033',GradientType=0 );
@@ -418,8 +481,9 @@ form button {
   height: 362px;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s;
-  background-size: 110%; }
+  background-size: 116%; }
 
 .bg-server {
   background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-service.png) no-repeat;
@@ -427,8 +491,9 @@ form button {
   height: 362px;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s;
-  background-size: 110%; }
+  background-size: 116%; }
 
 .bg-security {
   background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-security.png) no-repeat;
@@ -436,8 +501,9 @@ form button {
   height: 362px;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s;
-  background-size: 110%; }
+  background-size: 116%; }
 
 .bg-it-support {
   background: url(http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-it.png) no-repeat;
@@ -445,8 +511,9 @@ form button {
   height: 362px;
   -webkit-transition: 0.5s;
   /* Safari */
+  -o-transition: 0.5s;
   transition: 0.5s;
-  background-size: 110%; }
+  background-size: 116%; }
 
 .overflow-service {
   position: relative;
@@ -454,6 +521,7 @@ form button {
   .overflow-service:hover .bg-network, .overflow-service:hover .bg-server, .overflow-service:hover .bg-security, .overflow-service:hover .bg-it-support {
     -webkit-transition: 0.5s;
     /* Safari */
+    -o-transition: 0.5s;
     transition: 0.5s;
     background-size: 130%; }
 
@@ -525,7 +593,7 @@ form button {
     line-height: 26px; }
 
 /*Media query*/
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 1255px) {
   .sub-menu {
     width: 80% !important; }
   .bg-network, .bg-server, .bg-security, .bg-it-support {
@@ -533,7 +601,13 @@ form button {
   .overflow-service:hover .bg-network, .overflow-service:hover .bg-server, .overflow-service:hover .bg-security, .overflow-service:hover .bg-it-support {
     background-size: 170%; } }
 
+@media screen and (max-width: 1200px) {
+  .sub-menu {
+    width: 90% !important; } }
+
 @media screen and (max-width: 990px) {
+  h1 {
+    font-size: 3.7rem !important; }
   .container {
     width: 100%; }
   .logo {
@@ -546,4 +620,30 @@ form button {
   .overflow {
     margin-top: 0 !important; }
   .bg-network, .bg-server, .bg-security, .bg-it-support {
-    background-size: 101% !important; } }
+    background-size: 101% !important; }
+  #it-support .section:first-child {
+    padding-bottom: 0 !important; }
+  #it-support .section:first-child .pageHeader {
+    margin-bottom: 0 !important;
+    margin-top: 40px; }
+  #it-support .section:first-child ul {
+    margin-bottom: 40px !important; }
+  #it-support .section:nth-child(2) {
+    height: 320px !important; }
+    #it-support .section:nth-child(2) h3 {
+      margin-top: 25px !important;
+      margin-bottom: 10px !important; }
+  #it-support .section:last-child {
+    padding: 30px !important; }
+    #it-support .section:last-child h3 {
+      margin: 0 !important; }
+  #products .section:last-child {
+    display: none !important; }
+  #security-page .section:first-child {
+    height: 610px !important; }
+    #security-page .section:first-child h3 {
+      margin-top: 60px !important; }
+  #security-page .section:last-child {
+    height: 430px !important; }
+    #security-page .section:last-child h3 {
+      margin-top: 60px !important; } }

@@ -13,10 +13,10 @@
                <div class="col-md-12">
                   <ul class="list-inline sub-menu hidden-sm">
                      <li><a href="http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services</a></li>
-                     <li><a href=" http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support</a></li>
-                     <li><a href="#" title="Security Services">Security Services</a></li>
-                     <li><a href="#" title="IT Support">IT Support</a></li>
-                     <li><a href="#" title="Products">Products</a></li>
+                     <li><a href="http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/security-services/" title="Security Services">Security Services</a></li>
+                     <li><a href="http://localhost:8080/compuran/it-support/" title="IT Support">IT Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/products/" title="Products">Products</a></li>
                   </ul>
                </div>
             </div>
@@ -26,7 +26,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1>We can improve your Network</h1>
+                  <h1 class="marginTop190px">We can give all support to your server.</h1>
                   <p>
                      Compuran provides computer networking technical services as follows:
                   </p>
@@ -39,7 +39,7 @@
 <!-- Include Body page-->
 <div id="container-home">
    <div class="section">
-      <div class="container marginBottom50px">
+      <div class="container">
          <div class="row">
             <div class="col-md-12">
                <div class="pageHeader">
@@ -47,10 +47,10 @@
                </div>
             </div>
          </div>
-         <div class="row">
+         <div class="row marginBottom50px">
             <div class="col-md-12">
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  There are tons of technological advances nowadays that aim to streamline business operations to help improve workflow and revenue – that is the ultimate goal of technology.
                </p>
             </div>
          </div>
@@ -103,7 +103,7 @@
          <div class="row">
             <div class="container-fluid noPadding">
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-6 hidden-sm">
                          <img src="http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-ilustration.png" class="img-responsive" alt="">
                      </div>
                      <div class="col-md-6">

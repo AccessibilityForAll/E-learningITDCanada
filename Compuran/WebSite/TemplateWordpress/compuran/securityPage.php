@@ -13,10 +13,10 @@
                <div class="col-md-12">
                   <ul class="list-inline sub-menu hidden-sm">
                      <li><a href="http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services</a></li>
-                     <li><a href=" http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support</a></li>
-                     <li><a href="#" title="Security Services">Security Services</a></li>
-                     <li><a href="#" title="IT Support">IT Support</a></li>
-                     <li><a href="#" title="Products">Products</a></li>
+                     <li><a href="http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/security-services/" title="Security Services">Security Services</a></li>
+                     <li><a href="http://localhost:8080/compuran/it-support/" title="IT Support">IT Support</a></li>
+                     <li><a href="http://localhost:8080/compuran/products/" title="Products">Products</a></li>
                   </ul>
                </div>
             </div>
@@ -26,9 +26,9 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1>We can improve your Network</h1>
+                  <h1 class="marginTop190px">Security is very important for your company.</h1>
                   <p>
-                     Compuran provides computer networking technical services as follows:
+                    We can improve your company's security.
                   </p>
                </div>
             </div>
@@ -39,7 +39,7 @@
 <!-- Include Body page-->
 <div id="container-home">
    <div class="section">
-      <div class="container">
+      <div class="container"> 
          <div class="row">
             <div class="col-md-12">
                <div class="pageHeader">
@@ -50,7 +50,7 @@
          <div class="row marginBottom80px">
             <div class="col-md-12">
                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  We can improve your company's security. Compuran computer services is a one stop company to solve all your communication, computer and IT needs including, hardware and software needs. 
                </p>
             </div>
          </div>
@@ -110,10 +110,10 @@
    <div class="section">
       <div class="container">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-sm">
                <img src="http://localhost:8080/compuran/wp-content/themes/compuran/img/bg-serve-3.png" class="img-responsive" alt="">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
                <div class="container-fluid noPadding">
                   <div class="row">
                      <div class="col-md-12">

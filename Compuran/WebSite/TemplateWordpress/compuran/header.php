@@ -33,7 +33,7 @@
                      <!-- Main Menu desktop-->
                      <ul class="list-inline main-menu hidden-sm">
                         <li>
-                           <a href=" http://localhost:8080/compuran/contact-us/" class="active" title="Home">Home</a>
+                           <a href=" http://localhost:8080/compuran/" class="active" title="Home">Home</a>
                         </li>
                         <!--?php wp_list_pages('title_li=') ?-->
                         <li>
@@ -42,8 +42,8 @@
                            <li>
                            <a href="http://localhost:8080/compuran/contact-us/" title="Contact us">Contact Us</a>
                            </li>
-                           <li>
-                           <a href="#" title="Test">Test</a>
+                           <!--li>
+                           <a href="http://localhost:8080/compuran/test/" title="Test">Test</a>
                            </li-->
                         <li><a href="#" title="Search"><i class="material-icons">search</i></a></li>
                      </ul>
@@ -73,9 +73,9 @@
                            <ul class="list-unstyled">
                               <li><a href=" http://localhost:8080/compuran/networking-services/" title="Network Services">Network Services <i class="material-icons">keyboard_arrow_right</i></a></li>
                               <li><a href=" http://localhost:8080/compuran/server-support/" title="Servers Support">Servers Support <i class="material-icons">keyboard_arrow_right</i></a></li>
-                              <li><a href="#" title="Security Services">Security Services <i class="material-icons">keyboard_arrow_right</i></a></li>
-                              <li><a href="#" title="IT Support">IT Support <i class="material-icons">keyboard_arrow_right</i></a></li>
-                              <li><a href="#" title="Products">Products <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="http://localhost:8080/compuran/security-services/" title="Security Services">Security Services <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="http://localhost:8080/compuran/it-support/" title="IT Support">IT Support <i class="material-icons">keyboard_arrow_right</i></a></li>
+                              <li><a href="http://localhost:8080/compuran/products/" title="Products">Products <i class="material-icons">keyboard_arrow_right</i></a></li>
                            </ul>
                         </div>
                      </li>
@@ -83,7 +83,7 @@
                         <a href="#" title="Contact Us">Contact us <i class="material-icons">keyboard_arrow_right</i></a>
                      </li>
                      <li>
-                        <a href="#" title="Test">Test <i class="material-icons">keyboard_arrow_right</i></a>
+                        <a href="http://localhost:8080/compuran/test/" title="Test">Test <i class="material-icons">keyboard_arrow_right</i></a>
                      </li>
                   </ul>
                </div>

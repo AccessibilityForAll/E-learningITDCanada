@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php
 /* 
-   Template Name: contactPage*/
+   Template Name: testPage*/
    get_header() ?>
 <!-- End Header -->
 <!-- Include Banner-->
@@ -26,10 +26,9 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="marginTop190px">We want hearing you</h1>
+                  <h1 class="marginTop190px">Welcome to Compuran</h1>
                   <p>
-                    Please acquaint yourself with the detailed information on our company
-that is presented on this site, and write to us if you wish. 
+                     An Information Technology(IT) development company that creates cost-effective custom solutions based on technical expertise of hardware, software & networking developers.
                   </p>
                </div>
             </div>
