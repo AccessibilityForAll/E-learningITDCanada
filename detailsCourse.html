@@ -676,7 +676,26 @@
                                           </div>
                                        </li>
                                        <li class="CurricularGrade">
-                                          curriculum
+                                          <div class="container-fluid noPadding">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <table class="table table-bordered course-outline-table">
+                                                      <tbody>
+                                                         <tr v-for="itemTableCurriculum in tableCurriculum"  v-html="itemTableCurriculum.item">
+                                                         </tr>
+                                                         <!--tr>
+                                                            <td class="fontBold colorGray">Day 1</td>
+                                                            <td>IGP210</td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td class="fontBold colorGray">Topics to be covered  </td>
+                                                            <td>Topics to be covered</td>
+                                                         </tr-->
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
                                        </li>
                                        <li class="personalInformations">
                                           Personal Informations
@@ -699,59 +718,17 @@
                <div class="row">
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Course</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">Mentoring</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Progress</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Forum</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Library</a>
-                        </li>
+                        <li v-for="itensMenu1 in menuFooter1"  v-html="itensMenu1.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Profile</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">My History</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Bookings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Settings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Logout</a>
-                        </li>
+                        <li v-for="itensMenu2 in menuFooter2"  v-html="itensMenu2.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Profile</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">My History</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Bookings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Settings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Logout</a>
-                        </li>
+                        <li v-for="itensMenu2 in menuFooter2"  v-html="itensMenu2.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
@@ -777,6 +754,8 @@
             </div>
          </div>
       </div>
+      <!-- Vue.js -->
+      <script src="https://unpkg.com/vue"></script>
       <!-- Jquery-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Main JS-->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
    <head>
       <title>ITD Canada</title>
       <!-- Latest compiled and minified CSS Boostrap -->
@@ -203,7 +203,7 @@
                            <a href="#" title="Community">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite sprite-icon-community"></i></li>
-                                 <li><span>Community</span></li>
+                                 <li><span>{{Community}}</span></li>
                               </ul>
                            </a>
                         </li>
@@ -211,7 +211,7 @@
                            <a href="#" title="My site">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite sprite-icon-my-site"></i></li>
-                                 <li><span>My Site</span></li>
+                                 <li><span>{{mySite}}</span></li>
                               </ul>
                            </a>
                         </li>
@@ -223,7 +223,7 @@
                            <a href="#" title="Events">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite sprite-icon-event"></i></li>
-                                 <li><span>Events</span></li>
+                                 <li><span>{{events}}</span></li>
                               </ul>
                            </a>
                         </li>
@@ -231,7 +231,7 @@
                            <a href="#" title="Notifications">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite2 sprite-icon-notification"></i></li>
-                                 <li><span>Notifications</span></li>
+                                 <li><span>{{notifications}}</span></li>
                               </ul>
                            </a>
                         </li>
@@ -239,7 +239,7 @@
                            <a href="#" title="Messages">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite2 sprite-icon-mensage"></i></li>
-                                 <li><span>Messages</span></li>
+                                 <li><span>{{messages}}</span></li>
                               </ul>
                            </a>
                         </li>
@@ -247,7 +247,7 @@
                            <a href="#" class="triggerProfileMenu" title="Hi Raphael">
                               <ul class="list-inline icon-list">
                                  <li><i class="sprite sprite-icon-profile"></i></li>
-                                 <li><span>Hi Raphael</span> </li>
+                                 <li><span>Hi {{nameUser}}</span> </li>
                                  <li><i class="sprite2 sprite-icon-arrow top0"></i></li>
                               </ul>
                            </a>
@@ -258,19 +258,19 @@
                            <i class="sprite sprite-triangle_menu"></i>
                         </li>
                         <li>
-                           <a href="#" title="My Profile"><i class="sprite sprite-icon-my-profile"></i>My Profile</a>
+                           <a href="#" title="My Profile"><i class="sprite sprite-icon-my-profile"></i>{{myProfile}}</a>
                         </li>
                         <li>
-                           <a href="#" title="My History"><i class="sprite sprite-icon-history"></i>My History</a>
+                           <a href="#" title="My History"><i class="sprite sprite-icon-history"></i>{{myHistory}}</a>
                         </li>
                         <li>
-                           <a href="#" title="My Bookings"><i class="sprite sprite-icon-booking"></i>My Bookings</a>
+                           <a href="#" title="My Bookings"><i class="sprite sprite-icon-booking"></i>{{myBookings}}</a>
                         </li>
                         <li>
-                           <a href="#" title="Settings"><i class="sprite sprite-icon-booking"></i>Settings</a>
+                           <a href="#" title="Settings"><i class="sprite sprite-icon-booking"></i>{{settings}}</a>
                         </li>
                         <li>
-                           <a href="#" title="Logout"><i class="sprite sprite-icon-logout"></i>Logout</a>
+                           <a href="#" title="Logout"><i class="sprite sprite-icon-logout"></i>{{logout}}</a>
                         </li>
                      </ul>
                   </div>
@@ -289,7 +289,7 @@
                                  <i class="sprite sprite-icon-menu-down"></i>
                                  <i class="sprite sprite-icon-menu-up displayNone"></i>
                               </li>
-                              <li>Main Menu</li>
+                              <li>{{triggerMenu}}</li>
                               <li>
                                  <i class="sprite sprite-icon-menu-down"></i>
                                  <i class="sprite sprite-icon-menu-up displayNone"></i>
@@ -313,19 +313,19 @@
                   <div class="col-md-10">
                      <ul class="list-inline topMenu">
                         <li class="active">
-                           <a href="#" title="My Course">My Course</a>
+                           <a href="#" title="My Course">{{item_menu1}}</a>
                         </li>
                         <li>
-                           <a href="#" title="Mentoring">Mentoring</a>
+                           <a href="#" title="Mentoring">{{item_menu2}}</a>
                         </li>
                         <li>
-                           <a href="#" title="My Progress">My Progress</a>
+                           <a href="#" title="My Progress">{{item_menu3}}</a>
                         </li>
                         <li>
-                           <a href="#" title="Forum">Forum</a>
+                           <a href="#" title="Forum">{{item_menu4}}</a>
                         </li>
                         <li>
-                           <a href="#" title="Library">Library</a>
+                           <a href="#" title="Library">{{item_menu5}}</a>
                         </li>
                      </ul>
                   </div>
@@ -345,7 +345,7 @@
                      <ul class="list-inline time-class">
                         <li><i class="sprite sprite-icon-time"></i></li>
                         <li>
-                           <p>Your next class start in:<span class="fontBold">23 min</span></p>
+                           <p>{{nextClass}}<span class="fontBold">{{nextClassTime}}</span></p>
                         </li>
                      </ul>
                   </div>
@@ -359,7 +359,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <h2>Term3 - IGP 220 Visual Basic.NET</h2>
+                     <h2>{{currentTerm}}</h2>
                   </div>
                </div>
             </div>
@@ -367,44 +367,17 @@
                <div class="row">
                   <div class="col-md-12">
                      <ul class="list-inline itemTimeline">
-                        <li>
+                        <li v-for="Assignment in Assignments">
                            <i class="icon-check"></i>
                            <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Windows Calculator DeadLine: 5/15/2017"></a>
-                           <span>Windows Calculator <label>5/15/2017</label></span>
-                        </li>
-                        <li>
-                           <i class="icon-check"></i>
-                           <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Airline Reservation DeadLine: 5/20/2017"></a>
-                           <span>Airline Reservation <label>5/20/2017</label></span>
-                        </li>
-                        <li>
-                           <i class="icon-check"></i>
-                           <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Classes Objects DeadLine: 5/30/2017"></a>
-                           <span>Classes Objects <label>5/30/2017</label></span>
-                        </li>
-                        <li>
-                           <i class="item-active"></i>
-                           <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Database Manipulation Deadline: 6/5/2017"></a>
-                           <span>Database Manipulation <label>6/5/2017</label></span>
-                        </li>
-                        <li>
-                           <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Delete and Record Deadline: 6/15/2017"></a>
-                           <span>Delete Record <label>6/15/2017</label></span>
-                        </li>
-                        <li>
-                           <a href="#" class="icon-Assignment icon-timeline" title="Assignment: Midterm Exam Deadline: 6/20/2017"></a>
-                           <span>Midterm Exam<label>6/20/2017</label></span>
-                        </li>
-                        <li>
-                           <a href="#" class="icon-flag icon-timeline" title="Assignment: Final Exam Deadline: 6/30/2017"></a>
-                           <span>Final Exam <label>6/30/2017</label></span>
+                           <span>{{Assignment.name}} <label>{{Assignment.date}}</label></span>
                         </li>
                      </ul>
                   </div>
                </div>
                <div class="row">
                   <div class="col-md-12">
-                     <a href="detailsCourse.html" class="btn btn_primary acessBtn" title="Access the course">Access the course</a>
+                     <a href="detailsCourse.html" class="btn btn_primary acessBtn" title="Access the course">{{btnAccess}}</a>
                   </div>
                </div>
             </div>
@@ -419,21 +392,21 @@
                      <ul class="list-inline descritionCourse">
                         <li>
                            <i class="material-icons">event_note</i>
-                           <span><label class="fontBold">Course:</label> Graphic And Web Development Diploma with Co-op</span>
+                           <span><label class="fontBold">{{courseString}}</label>{{courseDataName}}</span>
                         </li>
                         <li class="separador">|</li>
                         <li class="marginLeft20px">
                            <i class="material-icons">access_time</i>
-                           <span>960 hours</span>
+                           <span>{{timeOfCourse}}</span>
                         </li>
                         <li class="separador">|</li>
                         <li class="marginLeft20px">
                            <i class="material-icons">work</i>
-                           <span><label class="fontBold">Term:</label> 3</span>
+                           <span><label class="fontBold">{{termString}}</label>{{currentTerm}}</span>
                         </li>
                         <li class="floatRight">
                            <i class="material-icons">date_range</i>
-                           <span><label class="fontBold">End Term 3: </label> 6/30/2017</span>
+                           <span><label class="fontBold">{{endTermString}}</label> {{endDateTerm}}</span>
                         </li>
                      </ul>
                   </div>
@@ -448,7 +421,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="page-header">
-                        <h2>Available Courses of Term 3</h2>
+                        <h2>{{titleCourses}}</h2>
                      </div>
                   </div>
                </div>
@@ -459,17 +432,13 @@
                         <div class="separetor"></div>
                         <div class="overflow-HiddenCourse">
                            <div class="detailsCourse">
-                              <a href="#"><i class="fa fa-plus-circle displayBlock" aria-hidden="true"></i>More Details</a>
+                              <a href="#"><i class="fa fa-plus-circle displayBlock" aria-hidden="true"></i>{{moreDetailsString}}</a>
                            </div>
                         </div>
-                        <h3>IGP210 Visual Basic.NET</h3>
+                        <h3>{{titleCourseData1}}</h3>
                         <div class="stage-description">
-                           <p>In this course students learn how to create desktop
-                              applications using a rapid development tool - Visual
-                              Basic.Net. They will also be introduced to Object
-                              Oriented Programming.
-                           </p>
-                           <a href="detailsCourse.html" class="btn btn_primary marginTop20px">Access the course</a>
+                           <p>{{descriptionCourseData1}}</p>
+                           <a href="detailsCourse.html" class="btn btn_primary marginTop20px">{{btnStringButtonCourse}}</a>
                         </div>
                      </div>
                   </div>
@@ -479,17 +448,13 @@
                         <div class="separetor"></div>
                         <div class="overflow-HiddenCourse">
                            <div class="detailsCourse">
-                              <a href="#"><i class="material-icons displayBlock font60px">schedule</i>This course will be available in <span class="fontBold font20px">7/02/2017</span> </a>
+                              <a href="#"><i class="material-icons displayBlock font60px">schedule</i> {{availableCourseString}} <span class="fontBold font20px">{{availableCourseDate1}}</span> </a>
                            </div>
                         </div>
-                        <h3>IGP220 C# Programming</h3>
+                        <h3>{{titleCourseData1}}</h3>
                         <div class="stage-description">
-                           <p>In this course students learn how to create desktop
-                              applications using C#.Net. Students will learn how to
-                              create windows based applications along with
-                              database connectivity...
-                           </p>
-                           <a href="#" class="btn btn_primary marginTop20px btn-disabled" disabled >Access the course</a>
+                           <p>{{descriptionCourseData1}}</p>
+                           <a href="#" class="btn btn_primary marginTop20px btn-disabled" disabled >{{btnStringButtonCourse}}</a>
                         </div>
                      </div>
                   </div>
@@ -499,17 +464,13 @@
                         <div class="separetor"></div>
                         <div class="overflow-HiddenCourse">
                            <div class="detailsCourse">
-                              <a href="#"><i class="material-icons displayBlock font60px">schedule</i>This course will be available in <span class="fontBold font20px"> 8/02/2017</span> </a>
+                              <a href="#"><i class="material-icons displayBlock font60px">schedule</i> {{availableCourseString}} <span class="fontBold font20px">{{availableCourseDate1}}</span> </a>
                            </div>
                         </div>
-                        <h3>IGP200 ASP & ASP.NET</h3>
+                        <h3>{{titleCourseData1}}</h3>
                         <div class="stage-description">
-                           <p>In this course students learn how to create web form
-                              pages using ASP.net and Microsoft SQL Server 2008
-                              Express. They will also learn how to use the controls
-                              to present and edit dynamic data on ASP.NET pages. 
-                           </p>
-                           <a href="#" class="btn btn_primary marginTop20px btn-disabled" disabled>Access the course</a>
+                           <p>{{descriptionCourseData1}}</p>
+                           <a href="#" class="btn btn_primary marginTop20px btn-disabled" disabled>{{btnStringButtonCourse}}</a>
                         </div>
                      </div>
                   </div>
@@ -524,18 +485,16 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="page-header marginTop50px">
-                        <h2>Mentoring </h2>
+                        <h2>{{titleMentoringString}}</h2>
                      </div>
                   </div>
                </div>
                <div class="row">
                   <div class="col-md-6">
                      <div class="page-header-small">
-                        <h3>Next Mentoring class</h3>
+                        <h3>{{nextClassString}}</h3>
                      </div>
-                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat libero id 
-                        massa dictum, ac auctor turpis tristique dictum, ac auctor turpis tristique.
-                     </p>
+                     <p class="description">{{nextClassDescriptionString}}</p>
                      <div class="bg-course">
                         <div class="head-course" style="background: url(img/imgCurso.png) rgba(0,0,0,0.5) no-repeat;"></div>
                         <div class="separetor"></div>
@@ -544,36 +503,32 @@
                               <a href="#"><i class="fa fa-plus-circle displayBlock" aria-hidden="true"></i>More Details</a>
                            </div>
                         </div>
-                        <h3 class="title-mentoring">Today topic: HTML5</h3>
-                        <span class="description">Next class will start in 7 minutes.</span>
+                        <h3 class="title-mentoring">{{currentTopicString}}</h3>
+                        <span class="description">{{nextClassStartString}}</span>
                         <div class="stage-description">
-                           <p>HTML5 has been designed to simplify many of the processes and techniques used in HTML 4, and to add significant new functionality, simply, across a, wide variety of devices.
-                           </p>
-                           <a href="#" class="btn btn_primary marginTop20px">Join your class</a>
+                           <p>{{descriptionMentoring}}</p>
+                           <a href="#" class="btn btn_primary marginTop20px">{{nextClassString}}</a>
                         </div>
                      </div>
                   </div>
                   <div class="col-md-6">
                      <div class="page-header-small">
-                        <h3>Book a private Mentoring class</h3>
+                        <h3>{{titleBookPublicString}}</h3>
                      </div>
-                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat libero id 
-                        massa dictum, ac auctor turpis tristique dictum, ac auctor turpis tristique.
-                     </p>
+                     <p class="description">{{nextClassDescriptionString}}</p>
                      <div class="bg-course">
                         <div class="head-course" style="background: url(img/bg-private-class.png) rgba(0,0,0,0.5) no-repeat;"></div>
                         <div class="separetor"></div>
                         <div class="overflow-HiddenCourse">
                            <div class="detailsCourse">
-                              <a href="#"><i class="fa fa-plus-circle displayBlock" aria-hidden="true"></i>More Details</a>
+                              <a href="#"><i class="fa fa-plus-circle displayBlock" aria-hidden="true"></i>{{moreDetailsString}}</a>
                            </div>
                         </div>
-                        <h3 class="title-mentoring">Book now, study tomorrow</h3>
-                        <span class="description">Remaining private classes: 1 out of 23</span>
+                        <h3 class="title-mentoring">{{titleBookPrivateString}}</h3>
+                        <span class="description">{{RemainingPrivateClassString}} {{RemainingPrivateClassDataNumber}}</span>
                         <div class="stage-description">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat libero id massa dictum, ac auctor turpis tristique dictum, ac auctor turpis tristique.
-                           </p>
-                           <a href="#" class="btn btn_primary marginTop20px">Book your private class</a>
+                           <p>{{descriptionPrivateClass}}</p>
+                           <a href="#" class="btn btn_primary marginTop20px">{{textBtnPrivateClass}}</a> 
                         </div>
                      </div>
                   </div>
@@ -588,59 +543,17 @@
                <div class="row">
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Course</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">Mentoring</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Progress</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Forum</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Library</a>
-                        </li>
+                        <li v-for="itensMenu1 in menuFooter1"  v-html="itensMenu1.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Profile</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">My History</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Bookings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Settings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Logout</a>
-                        </li>
+                        <li v-for="itensMenu2 in menuFooter2"  v-html="itensMenu2.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
                      <ul class="list-unstyled menu-footer">
-                        <li>
-                           <a href="#" title="My Course">My Profile</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Mentoring">My History</a>
-                        </li>
-                        <li>
-                           <a href="#" title="My Progress">My Bookings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Forum">Settings</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Library">Logout</a>
-                        </li>
+                        <li v-for="itensMenu2 in menuFooter2"  v-html="itensMenu2.item"></li>
                      </ul>
                   </div>
                   <div class="col-md-3">
@@ -666,6 +579,8 @@
             </div>
          </div>
       </div>
+       <!-- Vue.js -->
+      <script src="https://unpkg.com/vue"></script>
       <!-- Jquery-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Main JS-->
