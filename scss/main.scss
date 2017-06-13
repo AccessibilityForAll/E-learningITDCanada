@@ -8,6 +8,7 @@
 .overflow-Hidden{overflow: hidden !important;}
 .marginTop0{margin-top: 0 !important;}
 .marginTop10px{margin-top:10px !important;}
+.displayInlineBlock{display: inline-block !important}
 /*General Class*/
 body, html {
     height: 100%;  
@@ -63,6 +64,13 @@ body.login{
       margin-top: 50px;
       display: block;
     }
+  }
+}
+
+.listPresence{
+  font-size: 14px !important;
+  label:first-child{
+
   }
 }
 
@@ -1132,6 +1140,23 @@ ul.descritionCourse{
     font-size: 1.6rem;
     color: #8b8787;
   }
+}
+
+.childList{
+  li{
+    display: inline-block !important;
+    margin-bottom: 10px;
+    font-weight: normal !important;
+    i{
+      font-size: 10px;
+    }
+  }
+}
+
+.nameCourse{
+  text-align: center;
+  background: #ddd;
+  font-weight: bold;
 }
 
 .Overview-item{

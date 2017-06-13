@@ -546,7 +546,7 @@
                                           <a href="#" data-name-item="curricularGrade">Curriculum</a>
                                        </li>
                                        <li>
-                                          <a href="#" data-name-item="personalInformation">Personal Informations</a>
+                                          <a href="#" data-name-item="personalInformation">{{gradeItemstring}}</a>
                                        </li>
                                     </ul>
                                  </div>
@@ -683,14 +683,6 @@
                                                       <tbody>
                                                          <tr v-for="itemTableCurriculum in tableCurriculum"  v-html="itemTableCurriculum.item">
                                                          </tr>
-                                                         <!--tr>
-                                                            <td class="fontBold colorGray">Day 1</td>
-                                                            <td>IGP210</td>
-                                                         </tr>
-                                                         <tr>
-                                                            <td class="fontBold colorGray">Topics to be covered  </td>
-                                                            <td>Topics to be covered</td>
-                                                         </tr-->
                                                       </tbody>
                                                    </table>
                                                 </div>
@@ -698,7 +690,23 @@
                                           </div>
                                        </li>
                                        <li class="personalInformations">
-                                          Personal Informations
+                                          <div class="container-fluid noPadding">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <span class="colorGray listPresence"> <label>{{nameCourseString}}</label> - <label>{{yourPresenceData}}</label> {{yourPresenceString}} - <label></label></span>  
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <table class="table table-bordered course-outline-table">
+                                                      <tbody>
+                                                         <tr v-for="ItemTableGrade in tableGrade"  v-html="ItemTableGrade.item">
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </div>
                                        </li>
                                     </ul>
                                  </div>
@@ -706,7 +714,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> 
                </div>
             </div>
          </div>

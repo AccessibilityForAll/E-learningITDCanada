@@ -263,11 +263,155 @@ var vueDetail = new Vue({
         {item: '<td class="fontBold colorGray">Course Breakdown</td><td class="fontBold colorGray">Topics to be covered</td>'},
         {item: '<td class="fontBold colorGray">Day 1</td><td class="fontBold colorGray ">'+
         '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
-        '<ul class="list-unstyled">'+
-            '<li>•  Introduction to Classic ASP.</li>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Introduction to Classic ASP.</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Installing the local web server </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Response and request object</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Creating Web sites on the fly</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Deal with pictures</li>'+
         '</ul>'+
         '</td>'},
-    ]
+
+        {item: '<td class="fontBold colorGray">Day 2</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 3</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 4</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 5</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 6</td><td class="fontBold colorGray ">'+
+        'Mid Term'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 7</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 8</td><td class="fontBold colorGray ">'+
+        '<span class="marginTop10px fontBold">Lecture: Introduction to Classic ASP</span>'+
+        '<ul class="list-unstyled childList">'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Incorporating CSS with ASP</li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Reading forms </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Post and Get Methods </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Multiple form </li>'+
+            '<li> <i class="material-icons">fiber_manual_record</i> Calling the same ASP file </li>'+
+        '</ul>'+
+        '</td>'},
+        {item: '<td class="fontBold colorGray">Day 6</td><td class="fontBold colorGray ">'+
+        'Final Exam'+
+        '</td>'},
+    ],
+
+    //Table Grade Course
+    gradeItemstring: 'Grade and Personal Informations',
+
+    yourPresenceString: 'Presence',
+    nameCourseString: 'IGP 200 ASP.NET',
+    yourPresenceData: '80%',
+    
+    tableGrade: [
+        {item: '<td colspan="7" class="colorGray nameCourse ">IGP 200 ASP.NET</td>'},
+        {item: '<td class="fontBold colorGray">Grade item</td>'+
+        '<td class="fontBold colorGray">Calculated weight</td>'+
+        '<td class="fontBold colorGray">Grade</td>'+
+        '<td class="fontBold colorGray">Range</td>'+
+        '<td class="fontBold colorGray">Percentage</td>' +
+        '<td class="fontBold colorGray">FeedBack</td>'+
+        '<td class="fontBold colorGray">Contribution to course total</td>'
+        },
+        {item: '<td class="colorGray"><a href="#">Windows Calculator</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+
+        {item: '<td class="colorGray"><a href="#">Airline reservation system</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+
+        {item: '<td class="colorGray"><a href="#">Classes and Objects</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+
+        {item: '<td class="colorGray"><a href="#">Access Database Manipulation</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+
+        {item: '<td class="colorGray"><a href="#">ITD Airline with MSSQL</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+
+        {item: '<td class="colorGray"><a href="#">Final Exam</a></td>'+
+        '<td class="colorGray">0.00 %</td>'+
+         '<td class="colorGray alignCenter">-</td>'+
+         '<td class="colorGray">0-100</td>' +
+        '<td class="colorGray">-</td>'+
+        '<td class="colorGray">0.00 %</td>'+
+        '<td class="colorGray">0.00 %</td>'
+        },
+    ],
 
   }  
 })
