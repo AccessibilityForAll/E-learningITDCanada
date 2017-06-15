@@ -30,10 +30,8 @@ $(function() {
     });
 
     var url = window.location;
-    // var element = $('ul.nav a').filter(function() {
-    //     return this.href == url;
-    // }).addClass('active').parent().parent().addClass('in').parent();
-    var element = $('ul.nav a').filter(function() {
+
+   /* var element = $('ul.nav a').filter(function() {
         return this.href == url;
     }).addClass('active').parent();
 
@@ -43,5 +41,30 @@ $(function() {
         } else {
             break;
         }
-    }
+    }*/
+
+    //collpase sideMenu
+
+    var elementMenu = $(".sidebar");
+    var triggerMenu = $(".triggerMenu");
+    var elementContainer = $("#page-wrapper")
+
+    triggerMenu.on('click',function(){
+        if(elementMenu.hasClass("collpaseMenu")){
+            elementMenu.fadeOut();
+            elementMenu.removeClass("collpaseMenu")
+
+            setTimeout(function(){ 
+                elementContainer.removeClass("marginLeft250px");
+
+            }, 200);
+        }
+        else{
+            elementContainer.addClass("marginLeft250px");
+            setTimeout(function(){ 
+                elementMenu.fadeIn();
+                elementMenu.addClass("collpaseMenu");  
+            }, 200);
+        }
+    });   
 });
