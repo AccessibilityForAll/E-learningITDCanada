@@ -347,7 +347,7 @@ var vueDetail = new Vue({
     yourPresenceString: 'Presence',
     nameCourseString: 'IGP 200 ASP.NET',
     yourPresenceData: '80%',
-    
+
     tableGrade: [
         {item: '<td colspan="7" class="colorGray nameCourse ">IGP 200 ASP.NET</td>'},
         {item: '<td class="fontBold colorGray">Grade item</td>'+
@@ -412,6 +412,5 @@ var vueDetail = new Vue({
         '<td class="colorGray">0.00 %</td>'
         },
     ],
-
   }  
 })
