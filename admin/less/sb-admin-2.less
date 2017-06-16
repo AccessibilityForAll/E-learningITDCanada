@@ -643,7 +643,6 @@ table.dataTable thead .sorting:after {
     display: none;
 }
 
-
 .triggerMenu{
     font-size: 28px;
     color: #8e190d;
@@ -652,6 +651,10 @@ table.dataTable thead .sorting:after {
 
     &:hover{
         color: @background-redHover;
+    };
+
+    &:focus{
+        color: @background-red !important;  
     };
 }
 
@@ -665,12 +668,29 @@ table.dataTable thead .sorting:after {
                 color: rgba(255, 255, 255, 0.9);
                 font-size: 20px;
                 text-indent: 5px;
-            }
-           &:first-child{
-                img{
-                    width: 70%;
-                }
-           }; 
+            } 
         }
     }
+}
+
+.logo-white{
+    padding: 11px 5px;
+    //background-color: @background-redHover;
+    width: 100%;
+    img{
+        width: 70%;
+        position: relative;
+        left: 12px;
+    }
+}
+
+
+.floatRight{float: right !important}
+
+.inputSearch{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative;
+    top: -5px;
 }
