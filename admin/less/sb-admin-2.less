@@ -371,6 +371,7 @@ table.dataTable thead .sorting:after {
     }
 }
 
+
 // Timeline
 .timeline {
     position: relative;
@@ -555,6 +556,8 @@ table.dataTable thead .sorting:after {
 
 /*Raphael Class*/
 
+.colorRed{color: @background-red !important}
+
 .marginLeft250px{margin-left: 250px !important}
 
 .sidebar{
@@ -564,13 +567,15 @@ table.dataTable thead .sorting:after {
         border-color: transparent !important;
         a{
             color: rgba(255,255,255,0.9);
-            &:hover,&.active{
+            &:hover,&.active,&:focus{
                 background-color: @background-redHover !important;
             };
         }
     }
 }
-
+h1{
+    color: @background-red;
+}
 .nav-second-level{
     li{
         a{
@@ -586,7 +591,7 @@ table.dataTable thead .sorting:after {
 .bg-profile{
     width: 100%;
     height: 138px;
-    background-color: @background-redHover !important;
+    background: url(../img/bg-profile_text.png);
     position: relative;
     top: -50px;
     padding: 30px 15px;
@@ -661,13 +666,21 @@ table.dataTable thead .sorting:after {
 .closeMenu{
     position: absolute;
     ul{
-        padding: 15px;
         li{
             margin-bottom: 20px;
+            width: 100%;
+            &:hover{
+                border-left: 4px solid rgba(255, 255, 255, 0.9);
+                -webkit-transition: 0.5s; /* Safari */
+                transition: 0.5s;
+            };
             a{
+                padding: 10px 15px;
                 color: rgba(255, 255, 255, 0.9);
                 font-size: 20px;
                 text-indent: 5px;
+                display: block;
+
             } 
         }
     }
@@ -675,7 +688,6 @@ table.dataTable thead .sorting:after {
 
 .logo-white{
     padding: 11px 5px;
-    //background-color: @background-redHover;
     width: 100%;
     img{
         width: 70%;
